@@ -1,0 +1,12 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+instance/
+database.db
+static/uploads/
+.git/
+.gitignore
+.antigravitycli/
+.DS_Store
+docker/

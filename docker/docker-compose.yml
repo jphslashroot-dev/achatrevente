@@ -1,0 +1,16 @@
+services:
+  web:
+    build:
+      # Contexte = racine du projet (parent du dossier docker)
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: achat-revente:latest
+    container_name: achat-revente
+    restart: unless-stopped
+    ports:
+      - "9096:9096"
+    volumes:
+      # Persistance de la base SQLite
+      - ../database.db:/app/database.db
+      # Persistance des photos uploadées
+      - ../static/uploads:/app/static/uploads
