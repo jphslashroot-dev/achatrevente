@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual env
+venv/
+.venv/
+
+# Flask instance / DB
+instance/
+database.db
+*.sqlite
+*.sqlite3
+
+# Uploads
+static/uploads/
+
+# IDE / tooling
+.antigravitycli/
+.vscode/
+.idea/
+.DS_Store
